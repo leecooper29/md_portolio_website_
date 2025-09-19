@@ -1,0 +1,28 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #edebea;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid grey;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+article p {
+  text-indent: 2em;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 2px solid #333;
+}

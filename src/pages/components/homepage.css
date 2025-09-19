@@ -1,0 +1,95 @@
+.sec-1 {
+  margin: 1rem;
+  height: 100vh;
+}
+
+.av {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  padding-left: 1rem;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.bl {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* should not set the height like this */
+.edu {
+  margin-bottom: 1rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  background: #edebea;
+  border: 1px solid grey;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.skills-list ul {
+  display: flex;
+}
+
+.skills-list ul li {
+  padding-right: 1rem;
+  margin-top: 1rem;
+}
+
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  background: #edebea;
+  border: 1px solid grey;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  /* margin-top: 1rem; */
+}
+
+.item-1 p {
+  margin-bottom: 1rem;
+}
+
+.bt {
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 888px) {
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/*  --- IGNORE --- */
