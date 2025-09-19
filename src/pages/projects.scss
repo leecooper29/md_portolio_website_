@@ -2,13 +2,22 @@ h2 {
   font-size: 18px;
 }
 
+h1 {
+  margin: 0;
+}
+
+.projects-page {
+  margin: 1rem;
+}
+
 .projects-container {
+  margin-top: 1rem;
 }
 
 .featured-projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 1rem;
+  padding: 0;
   gap: 1rem;
   align-items: stretch;
   grid-auto-rows: 1fr;
@@ -18,7 +27,7 @@ h2 {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.85);
   font-size: 14px;
-  border: 1px solid grey;
+  border: 2px solid yellow;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
