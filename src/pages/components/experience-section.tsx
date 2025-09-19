@@ -8,7 +8,6 @@ interface ExperienceSectionProps {
   experiences: Experience[];
 }
 
-import "./homepage.css";
 
 export function ExperienceSection({ experiences }: ExperienceSectionProps) {
   return (

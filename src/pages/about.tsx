@@ -1,9 +1,8 @@
-import "./about.scss";
 import { useMemo, useState } from "react";
 import { ProgressList } from "../components/progress-list";
+import "./about.scss";
 import Header from "./header";
 // Background image for skills section (Skateboard)
-const skateImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Skateboard_deck_and_trucks.jpg/640px-Skateboard_deck_and_trucks.jpg";
 
 function AboutPage() {
   const [view, setView] = useState<"languages" | "frameworks">("languages");
@@ -37,25 +36,33 @@ function AboutPage() {
         <div className="about-me">
           <h3>About me:</h3>
           <article>
-          <p>
-            I’m a junior Computer Science student with 2+ years of coding experience and a 
-            strong foundation in front-end development. Proficient in React, JavaScript (ES6+), 
-            HTML5, and CSS3, I’ve built dynamic UIs and single-page applications using modern 
-            practices like React Hooks. Currently, I’m expanding into back-end development by 
-            building RESTful APIs with Node.js, Express.js, and MongoDB, with the goal of becoming 
-            a full-stack developer. I’m eager to solve challenging problems, build impactful 
-            applications, and eventually contribute to large-scale projects in big tech.
-          </p>
+            <p>
+              I’m a junior Computer Science student with 2+ years of coding
+              experience and a strong foundation in front-end development.
+              Proficient in React, JavaScript (ES6+), HTML5, and CSS3, I’ve
+              built dynamic UIs and single-page applications using modern
+              practices like React Hooks. Currently, I’m expanding into back-end
+              development by building RESTful APIs with Node.js, Express.js, and
+              MongoDB, with the goal of becoming a full-stack developer. I’m
+              eager to solve challenging problems, build impactful applications,
+              and eventually contribute to large-scale projects in big tech.
+            </p>
           </article>
         </div>
         <div className="skills-row">
           <div className="about-me skills-card">
             <h3>Skills</h3>
             <div className="toggle-row">
-              <button className={view === "languages" ? "btn active" : "btn"} onClick={() => setView("languages")}>
+              <button
+                className={view === "languages" ? "btn active" : "btn"}
+                onClick={() => setView("languages")}
+              >
                 Languages
               </button>
-              <button className={view === "frameworks" ? "btn active" : "btn"} onClick={() => setView("frameworks")}>
+              <button
+                className={view === "frameworks" ? "btn active" : "btn"}
+                onClick={() => setView("frameworks")}
+              >
                 Frameworks
               </button>
             </div>
@@ -65,11 +72,6 @@ function AboutPage() {
               <ProgressList items={frameworksData} />
             )}
           </div>
-          <div
-            className="skills-image"
-            style={{ backgroundImage: `url(${skateImage})` }}
-            aria-label="Skateboard background"
-          />
         </div>
       </section>
     </>
