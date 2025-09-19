@@ -2,7 +2,7 @@ import { EducationSection } from "../components/education-section";
 import { ExperienceSection } from "../components/experience-section";
 import { HeroSection } from "../components/hero-section";
 import "./homepage.scss";
-import { SkillsList } from "../components/skills-list";
+// import { SkillsList } from "../components/skills-list";
 import Header from "./header";
 
 function HomePage() {
