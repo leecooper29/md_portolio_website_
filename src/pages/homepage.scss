@@ -1,0 +1,152 @@
+.sec-1 {
+  margin: 1rem;
+  min-height: 100vh;
+}
+
+.av {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  padding-left: 1rem;
+  color: #ffffff;
+}
+
+/* Homepage title animation */
+.av h1.type {
+  display: inline-block;
+  color: #000000;
+}
+
+.av h1.type .char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-12px);
+  animation: charIn 400ms ease-out forwards;
+}
+
+@keyframes charIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .av h1 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.bl {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* should not set the height like this */
+.edu {
+  margin-bottom: 1rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid grey;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  color: #111827;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.skills-list ul {
+  display: flex;
+}
+
+.skills-list ul li {
+  padding-right: 1rem;
+  margin-top: 1rem;
+}
+
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid grey;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  /* margin-top: 1rem; */
+  color: #111827;
+}
+
+.item-1 p {
+  margin-bottom: 1rem;
+}
+
+.bt {
+  margin: 0.5rem 0;
+}
+
+/* Employment Experience spacing */
+.experience {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+// .experience h2 {
+//   margin: 0 0 0.5rem 0;
+// }
+
+.experience h3 {
+  margin: 0 0 0.25rem 0;
+}
+
+.experience > div {
+  padding: 0.5rem 0;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 888px) {
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/*  --- IGNORE --- */
+
+

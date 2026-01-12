@@ -1,0 +1,254 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid grey;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+}
+
+.aabout-me-paragraph {
+  margin-top: 2rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000000;
+}
+
+article p {
+  text-indent: 0;
+  color: #111827;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 2px solid #333;
+  color: #000000;
+}
+
+.toggle-row {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  justify-content: flex-start;
+}
+
+.btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h5 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.interest-list > li {
+  color: black;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.skills-card {
+  max-width: 680px;
+  align-self: flex-start;
+}
+
+hr {
+  color: black;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* skills-grid removed for toggle layout */
+
+.progress-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.progress-item {
+  margin-bottom: 0.75rem;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+}
+
+/* Make languages/frameworks labels and times black */
+.progress-label,
+.progress-time {
+  color: #000000;
+}
+
+/* Ensure optional progress list heading appears black if used */
+.progress-list h2 {
+  color: #000000;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border: 1px solid #d1d5db;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4f46e5;
+}
+
+/* Similar, varied colors per item */
+.progress-list .progress-item:nth-child(1) .progress-fill {
+  background: #3b82f6;
+}
+.progress-list .progress-item:nth-child(2) .progress-fill {
+  background: #60a5fa;
+}
+.progress-list .progress-item:nth-child(3) .progress-fill {
+  background: #818cf8;
+}
+.progress-list .progress-item:nth-child(4) .progress-fill {
+  background: #22d3ee;
+}
+.progress-list .progress-item:nth-child(5) .progress-fill {
+  background: #93c5fd;
+}
+
+/* Layout for skills + animation */
+.skills-row {
+  align-items: stretch;
+}
+
+.skills-animation {
+  display: none;
+}
+
+/* removed .skills-image */
+
+.skills-animation .skills-animation-svg {
+  width: 100%;
+  max-width: 340px;
+  color: #111827; /* inherits dark text theme */
+  transform-origin: 50% 50%;
+  animation: diceMotion 12s ease-in-out infinite;
+}
+
+/* Subtle spin animations */
+.skills-animation-svg .spin-slow {
+  animation: spin 18s linear infinite;
+  transform-origin: 100px 100px;
+}
+
+.skills-animation-svg .spin-med {
+  animation: spin 12s linear infinite reverse;
+  transform-origin: 100px 100px;
+}
+
+.skills-animation-svg .spin-fast {
+  animation: spin 6s linear infinite;
+  transform-origin: 100px 100px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 3D cube dice */
+.skills-animation .dice {
+  --dice-size: 340px;
+  width: min(100%, var(--dice-size));
+  height: min(100%, var(--dice-size));
+  display: grid;
+  place-items: center;
+  color: #111827;
+}
+
+.skills-animation .dice-cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotateDice 12s linear infinite;
+}
+
+.skills-animation .face {
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  border: 4px solid currentColor;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+.skills-animation .pip {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: currentColor;
+  border-radius: 999px;
+}
+
+.skills-animation .pip.c {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skills-animation .pip.tl {
+  top: 22%;
+  left: 22%;
+}
+.skills-animation .pip.tr {
+  top: 22%;
+  right: 22%;
+}
+.skills-animation .pip.bl {
+  bottom: 22%;
+  left: 22%;
+}
+.skills-animation .pip.br {
+  bottom: 22%;
+  right: 22%;
+}
+.skills-animation .pip.ml {
+  top: 50%;
+  left: 22%;
+  transform: translateY(-50%);
+}
+.skills-animation .pip.mr {
+  top: 50%;
+  right: 22%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 980px) {
+  .skills-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* removed .skills-image */
+}
